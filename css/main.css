@@ -1,0 +1,192 @@
+/* common styling */
+body
+{
+ /*text-align:left;*/
+ font-size:12px;
+ font-family:Arial,Verdana;   
+ /*line-height:18px;*/
+ margin: 0px;
+}
+p { margin: 0px; }
+.menu
+{
+    font-family: arial, sans-serif;
+    /*height: 100px;*/
+    position: absolute;
+    font-size: 11px;
+    z-index: 100;
+    overflow : visible;
+}
+.menu ul li a, .menu ul li a:visited
+{
+    display: block;   
+}
+.menu ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu.left ul li
+{
+	float:left;
+    position: relative;
+    clear:none;
+}
+.menu.right ul li
+{
+	float:right;
+    position: relative;
+    clear:none;
+    direction:rtl;
+/*text-align:right;*/
+}
+
+.menu.left.horizontal ul li
+{
+	float:left;
+    position: relative;
+    clear:none;
+	cursor: pointer;
+}
+
+.menu.left.vertical ul li
+{
+    position: relative;
+    float: none;
+	cursor: pointer;
+}
+.menu.right.horizontal ul li
+{
+	float:right;
+    position: relative;
+    clear:none;
+    direction:rtl;
+	cursor: pointer;
+    /*text-align:right;*/
+}
+.menu.right.vertical ul li
+{
+	position: relative;
+    	direction:rtl;
+	/*text-align:right;*/
+        float:none;
+	cursor: pointer;
+}
+
+.sub-menu
+{
+    display: none;
+    clear:both;
+    position: absolute;
+    left: 0px;
+    width: auto;
+}
+.imagepopup_overlay_fixed
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.imagepopup_overlay
+{
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 8010;
+    background: url(http://images.webydodev.com/-1/imagepopup/imagepopup_overlay.png);
+}
+
+.imagepopup_opened
+{
+    z-index: 8030;
+}
+
+.imagepopup_wrap
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8020;
+}
+
+.imagepopup_opened .imagepopup_skin
+{
+    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.imagepopup_skin
+{
+    position: relative;
+    background: #f9f9f9;
+    color: #444;
+    text-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.imagepopup_outer, .imagepopup_inner
+{
+    position: relative;
+}
+
+.imagepopup_opened .imagepopup_title
+{
+    visibility: visible;
+}
+
+.imagepopup_title_float_wrap
+{
+    position: absolute;
+    z-index: 8050;
+    text-align: center;
+}
+
+    .imagepopup_title_float_wrap .imagepopup_title_text
+    {
+        display: inline-block;
+        margin-right: -100%;
+        padding: 2px 20px;
+        background: transparent;
+        background: rgba(0, 0, 0, 0.8);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        text-shadow: 0 1px 2px #111;
+        color: #FFF;
+        font-weight: bold;
+        line-height: 24px;
+        white-space: nowrap;
+        margin: 10px auto;
+    }
+
+.imagepopup_title
+{
+    visibility: hidden;
+    font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    text-shadow: none;
+    z-index: 8050;
+    margin-bottom: -35px;
+}
+
+.imagepopup_close
+{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: -18px;
+    top: -16px;
+    cursor: pointer;
+    z-index: 8040;
+    background: url(http://images.webydodev.com/-1/imagepopup/close_btn.png) no-repeat;
+}
+
+
+
